@@ -1,0 +1,116 @@
+.main {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+  }
+  
+  .content {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  
+  .content .item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .content .item img {
+    width: 48px;
+    border-radius: 50%;
+    margin-top: 8px;
+  }
+  
+  .card {
+    position: relative; /* Ensure relative positioning for child elements */
+    background: white;
+    padding: 40px 20px 20px; /* Increased top padding for more space */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  
+  .content > div {
+    width: 320px;
+    height: 50px; /* Changed to auto to fit content */
+    overflow: visible;
+    pointer-events: auto;
+    border-radius: 7px;
+    margin: 4px 0;
+    color: white;
+    padding: 8px 16px; /* Adjust as needed */
+    font-size: 14px; /* Adjust font size */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Adjusted letter spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  
+  .content > div:nth-child(odd) {
+    background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+  }
+  
+  .content > div:nth-child(even) {
+    background: linear-gradient(135deg, #4b79a1 0%, #283e51 100%);
+  }
+  
+  .settings-button {
+    position: absolute; /* Keep absolute positioning */
+    top: 10px; /* Adjust top margin */
+    right: 10px; /* Adjust right margin */
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 6px 10px;
+    z-index: 1000; /* Keep it above other elements */
+  }
+  
+  
+  .settings-button:hover {
+    background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent on hover */
+    border-color: rgba(255, 255, 255, 1); /* Full opacity border on hover */
+  }
+  .dropdown {
+    position: absolute;
+    top: 40px; /* Position below the button */
+    right: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .dropdown button {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+    background: #f0f0f0;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .dropdown button:hover {
+    background: #e0e0e0;
+  }
+  
